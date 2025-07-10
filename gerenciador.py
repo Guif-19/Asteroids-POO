@@ -148,14 +148,11 @@ class GerenciadorJogo:
                     novos_asteroides_frag.extend(a.dividir())
                     break 
             
-            # Com OVNIs e Fantasmas
+            # Com OVNIs
             for o in list(self.__ovnis):
                 if p.is_ativo() and o.is_ativo() and p.colide_com(o):
                     p.set_ativo(False); o.set_ativo(False); self.set_pontuacao(self.get_pontuacao() + PONTOS_OVNI); break
-            for f in list(self.__fantasmas):
-                if p.is_ativo() and f.is_ativo() and p.colide_com(f):
-                    p.set_ativo(False); f.set_ativo(False); self.set_pontuacao(self.get_pontuacao() + PONTOS_FANTASMA); break
-        
+            
         self.__asteroides.extend(novos_asteroides_frag)
         
         # --- Colisão da nave do jogador com perigos ---

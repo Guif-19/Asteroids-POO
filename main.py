@@ -47,7 +47,6 @@ class App:
 
     def set_botao_continuar_ref(self, botao: pygame_menu.widgets.Button):
         self.__botao_continuar_ref = botao
-    # --- FIM DOS GETTERS E SETTERS ---
 
     def _criar_menu_principal(self) -> pygame_menu.Menu:
         tema = pygame_menu.themes.THEME_DARK.copy()

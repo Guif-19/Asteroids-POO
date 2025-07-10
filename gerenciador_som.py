@@ -13,7 +13,6 @@ class GerenciadorSom:
             self.__som_explosao_nave = pygame.mixer.Sound(SOM_EXPLOSAO_NAVE)
             self.__som_ovni_movendo = pygame.mixer.Sound(SOM_OVNI_MOVENDO)
             self.__som_ovni_tiro = pygame.mixer.Sound(SOM_OVNI_TIRO)
-            self.__som_fantasma_invisivel = pygame.mixer.Sound(SOM_FANTASMA_INVISIVEL)
             self.atualizar_volumes_sfx()
             print("Efeitos sonoros carregados.")
         except pygame.error as e:

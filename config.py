@@ -1,9 +1,8 @@
 import os
 import pathlib
 
-# Pega o diretório onde este arquivo (config.py) está
+
 DIRETORIO_ATUAL = pathlib.Path(__file__).parent.resolve()
-# Monta o caminho para a pasta 'assets'
 DIRETORIO_ASSETS = os.path.join(DIRETORIO_ATUAL, "assets")
 
 # Cores
@@ -57,21 +56,6 @@ COR_PROJETIL_OVNI_X = (255, 0, 255)  # Rosa
 CHANCE_SPAWN_OVNI_CRUZ = 0.001
 COR_PROJETIL_OVNI_CRUZ = (0, 255, 0)  # Verde
 
-# Nave Fantasma
-CHANCE_SPAWN_FANTASMA = 1
-MAX_FANTASMAS_TELA = 1
-PONTOS_FANTASMA = 500
-VELOCIDADE_LASER_FANTASMA = 12
-
-
-# Timings em milissegundos (1000ms = 1s)
-DURACAO_FANTASMA_CARREGANDO_MS = 2500
-DURACAO_FANTASMA_INVISIVEL_MS = 4000
-DURACAO_LASER_FANTASMA_MS = 250     
-COR_FANTASMA = (180, 0, 255)       # Roxo
-COR_FANTASMA_CARREGANDO = BRANCO   # Cor do indicador de carga
-COR_FANTASMA_LASER = (255, 0, 220) # Rosa choque
-
 
 # Fundo Estrelado
 NUM_ESTRELAS_LENTAS = 50
@@ -93,7 +77,7 @@ ARQUIVO_HIGH_SCORES = "high_scores.json"
 ARQUIVO_SAVE_GAME = "savegame.json"
 
 
-# --- Assets (usando os caminhos absolutos para a estrutura assets/images e assets/sounds) ---
+# --- Assets ---
 # Sons
 SOM_TIRO = os.path.join(DIRETORIO_ASSETS, "sounds", "laser1.mp3")
 SOM_EXPLOSAO_ASTEROIDE = os.path.join(DIRETORIO_ASSETS, "sounds", "explosao_asteroide.mp3")
@@ -102,7 +86,6 @@ MUSICA_FUNDO_JOGO = os.path.join(DIRETORIO_ASSETS, "sounds", "musica_fase_1.mp3"
 MUSICA_FUNDO_MENU = os.path.join(DIRETORIO_ASSETS, "sounds", "musica_menu.mp3")
 SOM_OVNI_MOVENDO = os.path.join(DIRETORIO_ASSETS, "sounds", "ovnimove.wav")
 SOM_OVNI_TIRO = os.path.join(DIRETORIO_ASSETS, "sounds", "ovnishot.wav")
-SOM_FANTASMA_INVISIVEL = os.path.join(DIRETORIO_ASSETS, "sounds", "invisibleufo.mp3")
 
 # Imagens
 IMAGEM_NAVE = os.path.join(DIRETORIO_ASSETS, "images", "pixel_ship_blue.png")
@@ -114,7 +97,5 @@ IMAGEM_OVNI_CRUZ = os.path.join(DIRETORIO_ASSETS, "images", "pixel_ship_green_sm
 IMAGEM_PROJETIL_JOGADOR = os.path.join(DIRETORIO_ASSETS, "images", "pixel_laser_small_blue.png")
 IMAGEM_PROJETIL_OVNI_X = os.path.join(DIRETORIO_ASSETS, "images", "pixel_laser_small_red.png")
 IMAGEM_PROJETIL_OVNI_CRUZ = os.path.join(DIRETORIO_ASSETS, "images", "pixel_laser_small_red.png")
-IMAGEM_FANTASMA = os.path.join(DIRETORIO_ASSETS, "images", "pixel_station_purple.png")
-IMAGEM_LASER_FANTASMA = os.path.join(DIRETORIO_ASSETS, "images", "pixel_laser_small_red.png")
 
 
